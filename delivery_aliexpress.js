@@ -36,15 +36,4 @@
     webviewWrapper.checkInvalidLogin = function() {
         return document.querySelector('.fm-error-message') != null;
     }
-    webviewWrapper.getProductContent = function() {
-        var priceDiv = document.getElementById('root')
-        if (priceDiv == null || priceDiv.innerHTML == '') {
-            return null
-        }
-       
-        return document.getElementsByTagName('html')[0].innerHTML;
-    }
-    
-   
-    
 })();
